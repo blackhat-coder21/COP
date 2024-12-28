@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club of Professional</title>
+    <meta name="description" content="Official Website" />
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+    <meta property="og:title" content="Club of Professional" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/blackhat-coder21" />
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff]">
+    <div class="loader">
+        <div class="c c1"></div>
+        <div class="c c2"></div>
+        <div class="c c3"></div>
+        <div class="c c4"></div>
+        <div class="c c5"></div>
+        <div class="c c6"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-black 
+                    tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around">
+        <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+            <img src="./assets/logo.jpg" alt="logo" class="tw-object tw-h-full tw-w-full" />
+        </a>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+            <div class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white 
+                            max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end 
+                            max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links tw-text-white" href=""> About us </a>
+                <a class="header-links tw-text-white" href=""> Features </a>
+                <a class="header-links tw-text-white" href=""> Blog </a>
+                <a class="header-links tw-text-white" href=""> Contact us </a>
+            </div>
+            <div class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base 
+            max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+                <a href="https://1drv.ms/u/s!AjPEcz74klXhgjIleue9rjFUWwhd?e=PbaWdy" aria-label="signup" class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full 
+              tw-bg-white tw-p-1 tw-pl-4 tw-text-black" download>
+                    <span>Download Now</span>
+                    <div class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center 
+                    tw-place-items-center tw-rounded-full tw-bg-primary 
+                    tw-font-semibold tw-text-black">
+                        <i class="bi bi-download"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl 
+                        tw-text-white lg:tw-hidden" onclick="toggleHeader()" aria-label="menu"
+            id="collapse-btn"></button>
+    </header>
+
+    <!-- About App -->
+    <section class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col 
+                    tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]">
+        <div class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center 
+                        tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col">
+            <div class="tw-flex tw-flex-col tw-place-content-center">
+                <div class="tw-flex tw-flex-wrap tw-text-6xl tw-font-semibold tw-uppercase 
+                                tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                    <span class="reveal-hero-text">
+                        ERP IIIT-A (प्रज्ञानम्)
+                    </span>
+                    <br />
+                </div>
+                <div class="reveal-hero-text tw-mt-2 tw-max-w-[450px] tw-p-2 
+                                tw-text-justify max-lg:tw-max-w-full">
+                    The IIITA ERP app is a cutting-edge solution designed to streamline student services and enhance
+                    user experience. With features like fee updates, mess history tracking, profile management, and
+                    medication records, the app offers a user-friendly interface for quick and efficient access to
+                    essential information.
+                    <p style="font-style: italic; color: red;">Note: Launched Beta version to detect bugs before being
+                        deployed on IIIT-A server. Download Beta version from above.</p>
+                </div>
+
+                <div class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2">
+                    <a class="tw-h-[50px] tw-max-w-[150px]" href="javascript:void(0)" onclick="showComingSoon()">
+                        <img src="./assets/images/brand-logos/app-store-badge.png" alt="App Store"
+                            class="tw-h-full tw-w-full" />
+                    </a>
+                    <a class="tw-h-[50px] tw-max-w-[150px]" href="javascript:void(0)" onclick="showComingSoon()">
+                        <img src="./assets/images/brand-logos/google-play-badge.png" alt="Google Play"
+                            class="tw-h-full tw-w-full" />
+                    </a>
+                </div>
+
+                <!-- Custom Popup -->
+                <div id="coming-soon-popup" class="popup-overlay" onclick="closePopup(event)">
+                    <div class="popup-content">
+                        <button class="close-btn" onclick="closePopup(event)">X</button>
+                        <h2>Coming Soon!</h2>
+                        <p>We're working hard to bring this to you. Stay tuned!</p>
+                    </div>
+                </div>
+
+                <!-- Styles for the popup -->
+                <style>
+                    /* Popup Overlay */
+                    .popup-overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 9999;
+                    }
+
+                    /* Popup Content */
+                    .popup-content {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        text-align: center;
+                        width: 300px;
+                        position: relative;
+                    }
+
+                    /* Close Button */
+                    .close-btn {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        font-size: 24px;
+                        cursor: pointer;
+                        background-color: red;
+                        color: white;
+                        border: none;
+                        border-radius: 50%;
+                        /* Make it circular */
+                        width: 40px;
+                        /* Set the width */
+                        height: 40px;
+                        /* Set the height */
+                        padding: 0;
+                        /* Remove padding to make it a perfect circle */
+                        display: flex;
+                        justify-content: center;
+                        /* Center the 'X' inside the button */
+                        align-items: center;
+                        /* Center the 'X' vertically */
+                    }
+
+
+                    /* Popup Header */
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    /* Popup Paragraph */
+                    p {
+                        font-size: 16px;
+                    }
+                </style>
+
+                <!-- JavaScript -->
+                <script>
+                    function showComingSoon() {
+                        document.getElementById("coming-soon-popup").style.display = "flex";
+                    }
+
+                    function closePopup(event) {
+                        // Check if the click is outside the popup content or on the close button
+                        if (event.target === document.getElementById("coming-soon-popup") || event.target.classList.contains("close-btn")) {
+                            document.getElementById("coming-soon-popup").style.display = "none";
+                        }
+                    }
+                </script>
+
+
+            </div>
+
+            <div class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center 
+                            tw-overflow-hidden max-lg:tw-max-w-[unset]">
+                <div class="tw-relative tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] 
+                            tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] 
+                            max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]">
+                    <img src="./assets/images/home/iphone.png" alt="app"
+                        class="reveal-hero-img tw-z-[1] tw-h-full tw-w-full tw-object-contain" />
+
+                    <div class="tw-absolute tw-bottom-0 tw-left-1/2 tw-h-[80%] tw-w-[80%] 
+                                    tw--translate-x-1/2 tw-rounded-full tw-bg-secondary" id="hero-img-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                tw-place-items-center tw-overflow-hidden tw-p-6">
+        <div
+            class="reveal-up tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[80%] tw-place-items-center 
+                tw-justify-around tw-gap-8 tw-rounded-xl tw-bg-[#e7e6e685] tw-p-4 max-lg:tw-max-w-full max-md:tw-flex-col">
+
+            <!-- Beta version section -->
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                <span class="tw-text-lg">
+                    <b>Beta Version</b><br>
+                    <span class="tw-block">➤ Deployed only to test functionalities</span>
+                </span>
+                <img src="./assets/images/beta.png" alt="capterra" height="250px" width="250px" />
+            </div>
+
+            <!-- Key Features section -->
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                <div class="tw-mt-4">
+                    <h3 class="tw-font-semibold">Key Features:</h3>
+                    <ul class="tw-list-inside tw-list-disc">
+                        <li>✅ Monitor Academic Progress</li>
+                        <li>✅ Easy Fee Updates</li>
+                        <li>✅ Mess History Tracking</li>
+                        <li>✅ Profile Management</li>
+                        <li>✅ Medication Records</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Upcoming Features section -->
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                <div class="tw-mt-4">
+                    <h3 class="tw-font-semibold">Upcoming Features:</h3>
+                    <ul class="tw-list-inside tw-list-disc">
+                        <li>🔜 Complaint Raising</li>
+                        <li>🔜 Fee Payment</li>
+                        <li>🔜 Mess Payment</li>
+                        <li>🔜 Download All Documents</li>
+                        <li>🔜 Place Order for Required Documents</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 1 -->
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-p-6">
+        <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+            <div class="tw-flex">
+                <div class="tw-h-[450px] tw-w-[300px]">
+                    <img src="./assets/videos/v1.gif" alt="v1" class="tw-h-full tw-w-full tw-object-contain" />
+                </div>
+            </div>
+            <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                <h3 class="tw-text-4xl tw-font-medium">Monitor Academic Progress</h3>
+
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Interactive UI for Progress Tracking
+                    </h4>
+                    <span class="tw-text-xl">
+                        Enjoy a visually engaging and user-friendly interface that displays your semester progress and
+                        marks details in a clear, organized manner.
+                    </span>
+                </div>
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        View Semesterwise Marks
+                    </h4>
+                    <span class="tw-text-xl">
+                        Stay on top of your studies by easily accessing the marks of each subject for every semester,
+                        helping you identify areas for improvement.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video 2 -->
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-p-6">
+        <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center 
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+            <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                <h3 class="tw-text-4xl tw-font-medium">All Your Essentials, Just a Tap Away!</h3>
+
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Track Fee, Mess, and Medication Records
+                    </h4>
+                    <span class="tw-text-xl">
+                        Quickly access and monitor your fee payments, mess history, and medication records with just a
+                        tap.
+                    </span>
+                </div>
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Raise Complaints Effortlessly
+                    </h4>
+                    <span class="tw-text-xl">
+                        Need help? Raise a complaint directly from your fingertips with our easy-to-use interface.
+                    </span>
+                </div>
+            </div>
+
+            <div class="tw-flex">
+                <div class="tw-h-[450px] tw-w-[300px]">
+                    <img src="./assets/videos/v2.gif" alt="v2" class="tw-h-full tw-w-full tw-object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features -->
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-overflow-hidden tw-p-6">
+        <div class="reveal-up tw-flex tw-min-h-[300px] tw-w-full tw-place-content-center 
+                        tw-place-items-center tw-gap-8 tw-rounded-xl tw-p-4 max-lg:tw-flex-col">
+            <div class="tw-flex tw-h-[450px] tw-w-[350px] tw-flex-col tw-gap-[5%] 
+                            tw-rounded-xl tw-bg-[#FFD5CA] tw-p-8">
+                <div
+                    class="tw-flex tw-h-[80px] tw-w-[80px] tw-place-content-center tw-items-center tw-rounded-full tw-bg-white">
+                    <i class="material-icons md-40">bolt</i>
+                </div>
+
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">
+                    Easier Academic Progress
+                </h3>
+                <p class="tw-text-lg">
+                    Stay on top of your academic journey with real-time updates on your progress, grades, and semester
+                    performance—fast and easy!
+                </p>
+            </div>
+
+            <div class="tw-flex tw-h-[450px] tw-w-[350px] tw-flex-col tw-gap-[5%] tw-rounded-xl
+                         tw-bg-primary tw-p-8">
+                <div class="tw-flex tw-h-[80px] tw-w-[80px] tw-place-content-center tw-items-center
+                                 tw-rounded-full tw-bg-white">
+                    <i class="material-icons md-40">forum</i>
+                </div>
+
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">
+                    Instant Fee & History
+                </h3>
+                <p class="tw-text-lg">
+                    Never miss a beat! Track your fee payments, history, and access any important documents with just a
+                    tap.
+                </p>
+            </div>
+            <div class="tw-flex tw-h-[450px] tw-w-[350px] tw-flex-col tw-gap-[5%] tw-rounded-xl 
+                            tw-bg-[#FFEB99] tw-p-8">
+                <div class="tw-flex tw-h-[80px] tw-w-[80px] tw-place-content-center tw-items-center 
+                                tw-rounded-full tw-bg-white">
+                    <i class="material-icons md-40">shield</i>
+                </div>
+
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">Effortless Complaints Management</h3>
+                <p class="tw-text-lg">
+                    Keep your medication records at your fingertips and raise complaints seamlessly through
+                    Samadhan—ensuring quick resolutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the developers -->
+    <section class="tw-mt-5 tw-flex tw-min-h-[60vh] tw-w-full tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-bg-black tw-p-[2%] tw-text-white max-lg:tw-min-h-[40vh]">
+        <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl">
+            Meet the developers
+        </h3>
+        <!-- Developer -->
+        <div class="reveal-up tw-max-w-[750px] max-md:tw-max-w-[100vw]">
+            <div class="swiper tw-mt-8 tw-flex tw-flex-col tw-gap-10 tw-space-y-8">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide tw-flex tw-place-content-center">
+                        <div
+                            class="tw-flex tw-h-fit tw-max-w-[750px] tw-place-content-center tw-place-items-center tw-gap-10 tw-rounded-lg tw-p-4 tw-shadow-lg">
+                            <div class="tw-flex tw-place-items-center">
+                                <div
+                                    class="tw-h-[150px] tw-w-[150px] tw-overflow-hidden tw-rounded-full max-lg:tw-h-[80px] max-lg:tw-w-[80px]">
+                                    <img src="./assets/me.jpeg" class="tw-h-full tw-w-full tw-object-cover"
+                                        alt="women" />
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                                <div class="tw-mt-4 tw-flex tw-gap-4 tw-justify-center tw-text-gray-200">
+                                    <!-- GitHub Icon -->
+                                    <a href="https://github.com/blackhat-coder21" target="_blank" aria-label="GitHub"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-github tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- LinkedIn Icon -->
+                                    <a href="https://www.linkedin.com/in/ankit-kumar-b82a95260/" target="_blank"
+                                        aria-label="LinkedIn" class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-linkedin tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- Website Icon -->
+                                    <a href="https://ankitkr.vercel.app/" target="_blank" aria-label="Website"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-globe tw-text-2xl"></i>
+                                    </a>
+                                </div>
+                                <b>- Ankit Kumar</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tw-flex tw-place-content-center">
+                        <div class="tw-flex tw-h-fit tw-max-w-[750px] tw-place-content-center 
+                                        tw-place-items-center tw-gap-10 tw-rounded-lg tw-p-4 tw-shadow-lg">
+                            <div class="tw-flex tw-place-items-center">
+                                <div class="tw-h-[150px] tw-w-[150px] tw-overflow-hidden 
+                                                tw-rounded-full max-lg:tw-h-[80px] max-lg:tw-w-[80px]">
+                                    <img src="./assets/tavva.jpeg" class="tw-h-full tw-w-full tw-object-cover"
+                                        alt="women" />
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                                <div class="tw-mt-4 tw-flex tw-gap-4 tw-justify-center tw-text-gray-200">
+                                    <!-- GitHub Icon -->
+                                    <a href="https://github.com/tavva-srinivas" target="_blank" aria-label="GitHub"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-github tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- LinkedIn Icon -->
+                                    <a href="https://www.linkedin.com/in/tavva-srinivas-861b72265/" target="_blank"
+                                        aria-label="LinkedIn" class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-linkedin tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- Website Icon -->
+                                    <a href="https://github.com/tavva-srinivas" target="_blank" aria-label="Website"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-globe tw-text-2xl"></i>
+                                    </a>
+                                </div>
+
+                                <b>- Tavva Srinivas</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tw-flex tw-place-content-center">
+                        <div class="tw-flex tw-h-fit tw-max-w-[750px] tw-place-content-center 
+                                        tw-place-items-center tw-gap-10 tw-rounded-lg tw-p-4 tw-shadow-lg">
+                            <div class="tw-flex tw-place-items-center">
+                                <div class="tw-h-[150px] tw-w-[150px] tw-overflow-hidden 
+                                                tw-rounded-full max-lg:tw-h-[80px] max-lg:tw-w-[80px]">
+                                    <img src="./assets/hima.jpeg" class="tw-h-full tw-w-full tw-object-cover"
+                                        alt="women" />
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                                <div class="tw-mt-4 tw-flex tw-gap-4 tw-justify-center tw-text-gray-200">
+                                    <!-- GitHub Icon -->
+                                    <a href="https://github.com/himanshuhr8" target="_blank" aria-label="GitHub"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-github tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- LinkedIn Icon -->
+                                    <a href="https://www.linkedin.com/in/himanshu-raj-1053a4260/" target="_blank"
+                                        aria-label="LinkedIn" class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-linkedin tw-text-2xl"></i>
+                                    </a>
+
+                                    <!-- Website Icon -->
+                                    <a href="http://hima31.vercel.app/" target="_blank" aria-label="Website"
+                                        class="tw-text-gray-200 hover:tw-text-white">
+                                        <i class="bi bi-globe tw-text-2xl"></i>
+                                    </a>
+                                </div>
+                                <b>- Himanshu Raj</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-container tw-flex tw-place-content-center"></div>
+
+                <div class="tw-flex tw-place-content-center tw-gap-6">
+                    <div class="testmonial-prev tw-flex tw-h-[40px] tw-w-[40px] tw-place-content-center 
+                                    tw-place-items-center tw-rounded-full tw-border-2 tw-border-solid 
+                                    tw-border-gray-300 tw-text-2xl">
+                        <i class="bi bi-arrow-left"></i>
+                    </div>
+                    <div class="testmonial-next tw-flex tw-h-[40px] tw-w-[40px] tw-place-content-center 
+                                    tw-place-items-center tw-rounded-full tw-border-2 tw-border-solid 
+                                    tw-border-gray-300 tw-text-2xl">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-overflow-hidden tw-p-6" id="">
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+            <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                <h2 class="tw-text-4xl tw-font-semibold">
+                    Your one-stop solution for managing student life at IIIT-A
+                </h2>
+            </div>
+            <div
+                class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col">
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-bar-chart-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Monitor Academic Progress
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Keep track of your academic performance in real-time.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-clock-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Easy Fee Updates History
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Stay updated with your fee payments and history.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-cloud-download-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Download Any Document
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Quickly download any important document with ease.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-geo-alt-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Mess History Tracking
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Access and monitor your mess history for transparency.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-exclamation-circle-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Raise Complaint
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Submit and track your complaints through the Samadhan system.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-shield-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Medication Records
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Keep a record of your medication for easy reference.
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://1drv.ms/u/s!AjPEcz74klXhgjIleue9rjFUWwhd?e=PbaWdy" aria-label="download" class="reveal-up tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full
+                             tw-bg-black tw-p-1 tw-pl-4 tw-text-white">
+                <span>Download</span>
+                <div class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center 
+                                tw-rounded-full tw-bg-primary tw-font-semibold tw-text-black">
+                    <i class="bi bi-download"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[3%] tw-px-[5%] 
+                    tw-text-black max-md:tw-flex-col">
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 
+                        max-md:tw-w-full">
+            <img src="./assets/logo.jpg" alt="logo" srcset="" class="tw-max-w-[120px]" />
+            <div>
+                IIIT Allahabad,
+                <br />
+                Devghat, Jhalwa,
+                <br />
+                Prayagraj, UP
+            </div>
+            <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+            <div class="tw-flex tw-gap-4 tw-text-2xl">
+                <a href="" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/@pauls_freeman" aria-label="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://instagram.com/" class="tw-h-[40px] tw-w-[40px]" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-3xl max-md:tw-text-xl">Team Members</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">What we do</a>
+                <a href="" class="footer-link">FAQ</a>
+                <a href="" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">About us</a>
+                <a href="" class="footer-link">FAQ</a>
+                <a href="" class="footer-link">Contact Us</a>
+                <a href="" class="footer-link">Blogs</a>
+                <a href="" class="footer-link">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./index.js"></script>
+
+<style>
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        /* font-size: 12px; */
+        opacity: 1;
+        background: #f7f7f7fa;
+        left: auto;
+    }
+
+    .swiper-pagination-bullet:hover {
+        color: #000;
+        opacity: 1;
+        background: #ede0e0bd;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #f39696 !important;
+    }
+
+    .swiper {
+        padding: 10px !important;
+    }
+</style>
+
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+        loader.classList.add("remove");
+    });
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.pagination-container',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return `<span class="${className}"></span>`
+            },
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.testmonial-next',
+            prevEl: '.testmonial-prev',
+        },
+    })
+</script>
+
+</html>
